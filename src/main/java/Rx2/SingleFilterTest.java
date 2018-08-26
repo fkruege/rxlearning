@@ -14,6 +14,7 @@ public class SingleFilterTest {
     public static void main(String[] args) {
 
         Single.fromCallable(() -> "hello")
+//        Single.fromCallable(() -> "")
                 .filter(new Predicate<String>() {
                     @Override
                     public boolean test(String s) throws Exception {
